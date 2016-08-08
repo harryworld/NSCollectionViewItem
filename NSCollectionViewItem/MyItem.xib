@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GVr-4O-B5l">
-                    <rect key="frame" x="106" y="17" width="37" height="17"/>
+                    <rect key="frame" x="90" y="17" width="69" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="UDc-C7-suq">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -28,6 +28,7 @@
         </customView>
         <customObject id="PJ7-ZH-lS9" customClass="MyItem" customModule="NSCollectionViewItem" customModuleProvider="target">
             <connections>
+                <outlet property="textField" destination="GVr-4O-B5l" id="Yha-x8-gfy"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="GvW-fv-Hdz"/>
             </connections>
         </customObject>

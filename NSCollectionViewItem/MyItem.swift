@@ -14,5 +14,9 @@ class MyItem: NSCollectionViewItem {
         super.viewDidLoad()
         // Do view setup here.
     }
-    
+
+    func configure(title title: String) {
+        textField?.stringValue = title
+    }
+
 }

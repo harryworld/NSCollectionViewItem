@@ -15,7 +15,7 @@ class ViewController: NSViewController {
             collectionView.dataSource = self
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,18 +31,28 @@ class ViewController: NSViewController {
         }
     }
 
+    @IBAction func createPlaceholder(sender: AnyObject) {
+
+        let item = ItemFactory.shared.placeholder
+        item.configure(title: "ABC")
+
+        print(item.textField?.stringValue) // Prints nil
+    }
 
 }
 
 extension ViewController: NSCollectionViewDataSource {
-    
+
     func collectionView(collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
     }
-    
+
     func collectionView(collectionView: NSCollectionView, itemForRepresentedObjectAtIndexPath indexPath: NSIndexPath) -> NSCollectionViewItem {
-        
-        return collectionView.makeItemWithIdentifier(String(MyItem), forIndexPath: indexPath)
+
+        let item = collectionView.makeItemWithIdentifier(String(MyItem), forIndexPath: indexPath) as! MyItem
+        item.configure(title: "MyItem")
+
+        return item
     }
-    
+
 }

@@ -14,6 +14,7 @@
 		D105361E1D58D6D0001B42EE /* MyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D105361C1D58D6D0001B42EE /* MyItem.swift */; };
 		D105361F1D58D6D0001B42EE /* MyItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D105361D1D58D6D0001B42EE /* MyItem.xib */; };
 		D10536211D58D884001B42EE /* MyFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10536201D58D884001B42EE /* MyFlowLayout.swift */; };
+		D10536231D58DA65001B42EE /* ItemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10536221D58DA65001B42EE /* ItemFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D105361C1D58D6D0001B42EE /* MyItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyItem.swift; sourceTree = "<group>"; };
 		D105361D1D58D6D0001B42EE /* MyItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyItem.xib; sourceTree = "<group>"; };
 		D10536201D58D884001B42EE /* MyFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFlowLayout.swift; sourceTree = "<group>"; };
+		D10536221D58DA65001B42EE /* ItemFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				D105361D1D58D6D0001B42EE /* MyItem.xib */,
 				D10536201D58D884001B42EE /* MyFlowLayout.swift */,
 				D10536161D58D396001B42EE /* Info.plist */,
+				D10536221D58DA65001B42EE /* ItemFactory.swift */,
 			);
 			path = NSCollectionViewItem;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				D10536101D58D396001B42EE /* ViewController.swift in Sources */,
 				D10536211D58D884001B42EE /* MyFlowLayout.swift in Sources */,
 				D105361E1D58D6D0001B42EE /* MyItem.swift in Sources */,
+				D10536231D58DA65001B42EE /* ItemFactory.swift in Sources */,
 				D105360E1D58D396001B42EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

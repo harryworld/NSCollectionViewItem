@@ -698,6 +698,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKu-Qp-7ul">
+                                <rect key="frame" x="131" y="13" width="220" height="32"/>
+                                <buttonCell key="cell" type="push" title="Create Item Programmatically" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Jzx-T3-dr3">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="createPlaceholder:" target="XfG-lQ-9wD" id="ipN-uM-XDy"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
