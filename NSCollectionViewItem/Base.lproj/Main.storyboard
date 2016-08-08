@@ -682,10 +682,10 @@
                                         <collectionView ambiguous="YES" id="OH7-Lp-EhE">
                                             <rect key="frame" x="0.0" y="0.0" width="248" height="158"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="KZC-4W-rv6">
+                                                <size key="itemSize" width="248" height="50"/>
+                                            </collectionViewFlowLayout>
                                             <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <connections>
-                                                <segue destination="Zb0-BR-7V0" kind="relationship" relationship="Prototype" id="nzG-jg-cF7"/>
-                                            </connections>
                                         </collectionView>
                                     </subviews>
                                 </clipView>
@@ -700,23 +700,13 @@
                             </scrollView>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="OH7-Lp-EhE" id="iB8-af-4us"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="655"/>
-        </scene>
-        <!--Collection View Item-->
-        <scene sceneID="eUL-v1-Y1f">
-            <objects>
-                <collectionViewItem id="Zb0-BR-7V0" sceneMemberID="viewController">
-                    <view key="view" id="Hum-Dy-ayz">
-                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </collectionViewItem>
-                <customObject id="Tgr-8z-Qah" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="505" y="655"/>
         </scene>
     </scenes>
 </document>

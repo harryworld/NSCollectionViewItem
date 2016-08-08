@@ -10,6 +10,12 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var collectionView: NSCollectionView! {
+        didSet {
+            collectionView.dataSource = self
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,3 +31,15 @@ class ViewController: NSViewController {
 
 }
 
+extension ViewController: NSCollectionViewDataSource {
+    
+    func collectionView(collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func collectionView(collectionView: NSCollectionView, itemForRepresentedObjectAtIndexPath indexPath: NSIndexPath) -> NSCollectionViewItem {
+        
+        return collectionView.makeItemWithIdentifier(String(MyItem), forIndexPath: indexPath)
+    }
+    
+}
