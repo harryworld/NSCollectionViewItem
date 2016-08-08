@@ -20,6 +20,9 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let layout = MyFlowLayout()
+        layout.itemSize = NSSize(width: 248, height: 50)
+        collectionView.collectionViewLayout = layout
     }
 
     override var representedObject: AnyObject? {
