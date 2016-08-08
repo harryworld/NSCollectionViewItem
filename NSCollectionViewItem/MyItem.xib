@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="248" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GVr-4O-B5l">
+                <textField identifier="TitleField" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GVr-4O-B5l">
                     <rect key="frame" x="90" y="17" width="69" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="UDc-C7-suq">
                         <font key="font" metaFont="system"/>

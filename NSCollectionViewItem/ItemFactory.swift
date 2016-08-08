@@ -6,6 +6,7 @@
 //  Copyright © 2016 STAY REAL LIMITED. All rights reserved.
 //
 
+import Cocoa
 import Foundation
 
 class ItemFactory {
@@ -17,6 +18,14 @@ class ItemFactory {
     private func createItem() -> MyItem {
 
         let item = MyItem(nibName: String(MyItem), bundle: NSBundle.mainBundle())!
+
+        if item.textField == nil {
+            for v in item.view.subviews {
+                if v.identifier == "TitleField" {
+                    item.textField = v as? NSTextField
+                }
+            }
+        }
 
         return item
     }

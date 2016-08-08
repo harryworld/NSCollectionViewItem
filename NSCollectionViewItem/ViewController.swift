@@ -36,7 +36,7 @@ class ViewController: NSViewController {
         let item = ItemFactory.shared.placeholder
         item.configure(title: "ABC")
 
-        print(item.textField?.stringValue) // Prints nil
+        print(item.textField?.stringValue) // Prints "ABC" now
     }
 
 }
